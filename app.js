@@ -2,8 +2,12 @@ let total = 0
 
 let monthlyInvestment = 1000
 
+
+// 5 percent
 // let percentIncrease = .00416
 
+
+// 10 percent
 let percentIncrease = .0082
 
 let months = 120
