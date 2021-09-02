@@ -2,26 +2,43 @@ let total = 0
 
 let monthlyInvestment = 1000
 
-
-// 5 percent
-// let percentIncrease = .00416
-
-
-// 10 percent
-let percentIncrease = .0082
-
 let months = 120
 
-let interest
+const $money = $("#money")
 
-function compound() {
-    total += monthlyInvestment;
+const $rate = $("#rate")
+
+const $months = $("#months")
+
+
+
+const $calculate = $("#calculate")
+
+const $calculator = $("#calculator")
+
+$calculator.on("submit", function(event){
+    event.preventDefault();
+    
+    $('#total').remove()
+    total = 0
+    for (let i=0; i< Number($months.val()); i++) {
+        compound($money,$rate)
+   }
+   
+    $("form").append(`<p id="total">${total}</p>`)
+   
+   
+   
+   
+})
+
+
+function compound(money,rate) {
+    let interest
+    let percentIncrease = Number(rate.val())/12
+    total += Number(money.val());
     interest = total * percentIncrease
     total += interest
-    console.log(total)
     return total
 }
 
-for (let i=0; i< months; i++) {
-    compound()
-}

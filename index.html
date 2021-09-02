@@ -11,19 +11,20 @@
 </head>
 <body class="container">
     <h1 class="display-1 text-center">Compound interest calculator</h1>
-    <div class="row">
-    <p class="text-center">
-        Everything is in console now. It is showing 1k a month at 10 percent interest a year for ten years
-        
-    </p>
-        <div class="col-3"></div>
-        <div class="col-2"><input type="text" placeholder="months"></div>
-        <div class="col-2"><input type="text"  placeholder="interest rate per year"></div>
-        <div class="col-2"><button class="btn btn-success btn-md">Calculate</button></div>
-        
-    
+    <div class="row justify-content-sm-center">
+    <div class="col-sm-8 col-md-5 col-lg-3">
+    <form id="calculator" class="text-center">
+        <label for="money">Additional money per month:</label>
+        <input type="number" placeholder="" id = "money">
+        <label for="months">Number of months to compound:</label>
+        <input type="number" placeholder="" id = "months">
+        <label for="rate">Interest rate per year as decimal:</label>
+        <input type="number" step=".01" placeholder="" id = "rate">
+        <div class="mt-4"><button id="calculate" class="btn btn-success btn-lg">Calculate</button></div>
+    </form>
 </div>
-    
+</div>
+
 </body>
 
 <script  src="app.js"></script>
