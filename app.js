@@ -1,5 +1,7 @@
 let total = 0
 
+let $total = $("#start")
+
 let monthlyInvestment = 1000
 
 let months = 120
@@ -20,7 +22,8 @@ $calculator.on("submit", function(event){
     event.preventDefault();
     
     $('#total').remove()
-    total = 0
+    
+    total = Number($total.val())
     for (let i=0; i< Number($months.val()); i++) {
         compound($money,$rate)
    }
