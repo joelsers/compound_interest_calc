@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body class="container">
-    <h1 class="display-1 text-center">Compound interest calculator</h1>
+    <h1 class="display-1 text-center">Compound Interest Calculator</h1>
     <div class="row justify-content-sm-center">
-    <div class="col-sm-8 col-md-5 col-lg-3">
+    <div class=" col-sm-8 col-md-6 col-lg-6 text-center" ><p>The point of this calculator is to show you how much you could have if you invest a certain amount of money per month for a certain amount of time while utilizing the power of compound interest</p>
+    </div>
+</div>
+    <div class="row justify-content-sm-center">
+            <div class="col-sm-8 col-md-5 col-lg-3">
     <form id="calculator" class="text-center">
+        <label for="start">Starting amount invested:</label>
+        <input type="number" placeholder="" id = "start">
         <label for="money">Additional money per month:</label>
         <input type="number" placeholder="" id = "money">
         <label for="months">Number of months to compound:</label>
