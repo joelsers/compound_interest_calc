@@ -28,7 +28,7 @@ $calculator.on("submit", function(event){
         compound($money,$rate)
    }
    
-    $("form").append(`<p id="total">${total}</p>`)
+    $("form").append(`<span id="total">${total}</span>`)
    
    
    

@@ -1,7 +1,12 @@
-footer {
-    position:fixed;
-    bottom: 0px;
-    left: 0px;
-    width:100%;
+
+#links {
+    bottom: 15px;
+    position: fixed;
 }
 
+button {
+    margin-bottom:50px;
+}
+/* body {
+    overflow:visible;
+} */
